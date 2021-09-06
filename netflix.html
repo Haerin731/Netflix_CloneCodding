@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <!-- css란 Cascalding Style Sheets 의 약자로 웹문서의 스타일을 지정해 놓은 파일.
+        다시말해 웹사이트를 꾸미는 style의 정의를 모아 둔 파일. -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="./netflix.css" />
+        <!-- link 태그의 rel : 현재 문서와 외부 리소스 사이의 연관 관계를 명시
+        lint 태그의 href : 링크된 외부 리소스의 url을 명시 -->
+        <!-- html에 css를 적용시키는 방법 중, 별도의 css파일을 만들고 html 문서와 연결하는 방법을 택. -->
+        <script src="./netflix.js"></script>
+        <!-- src: 링크된 외부 리소스의 url을 명시 -->
+    </head>
+    <body>
+        <!-- div태그는 Division의 약자로 웹사이트의 레이아웃(전체적인 틀)을 만들때 주로 사용 -->
+        <!-- <div> 요소는 "순수" 컨테이너로서 아무것도 표현하지 않습니다. 
+            대신 다른 요소 여럿을 묶어 class나 id 속성으로 꾸미기 쉽도록 돕거나, 
+            문서의 특정 구역이 다른 언어임을 표시(lang 속성 사용)하는 등의 용도로 사용할 수 있습니다. -->
+       
+        <div class="home">
+            <video
+                src="./sweethome.mp4"
+                poster="./sweethome.jpg"
+                autoplay 
+                muted
+            >
+            </video>
+            <!-- autoplay: 동영상 자동재생 -->
+            <!-- muted: 악용 방지를 위해 써야함 -->
+            
+            <div class="overlay">
+                <div class="header">
+                    <div class="logo">NETFLIX</div>
+                    <div class="nav">
+                        <div class="nav-item">홈</div>
+                        <div class="nav-item">TV 프로그램</div>
+                        <div class="nav-item">영화</div>
+                        <div class="nav-item">NEW! 요즘 대세 영화</div>
+                        <div class="nav-item">내가 찜한 콘텐츠</div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu-item">A</div>
+                        <div class="menu-item">키즈</div>
+                        <div class="menu-item">A</div>
+                        <div class="menu-item">A</div>
+                        <div class="menu-item">A</div>
+                        <div class="menu-item">A</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

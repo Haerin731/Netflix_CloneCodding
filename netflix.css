@@ -1,0 +1,42 @@
+*{
+    border: 1px solid greenyellow;
+}
+.home{
+    position: relative;
+    /* 매우 중요! 브라우저는 박스 모델을 가지고 있는데, 부모가 relative를 선언하게 되면 자식들은 밖으로 못나감. */
+    background-color: black;
+}
+video{
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    /* 부모가 주는 공간 안에서 위치 지정 가능. 표 덮어쓰기같은 기능 */
+    top:0;
+    left:0;
+    width: calc(100% - 100px);
+    padding:10px 50px;
+}
+.header{
+    display:flex;
+}
+.logo{
+    color:red;
+    /* padding:0 15px; */ 
+    margin-right: 40px; 
+    /* padding은 object 내의 내부 여백을, margin은 object 화면과의 외부 여백을 의미 */
+}
+.nav{
+    display:flex;
+    color:white;
+}
+.nav-item{
+}
+.menu{
+    display:flex;
+    margin-left:auto;
+    color:white;
+}
+.munu-item{
+
+}
