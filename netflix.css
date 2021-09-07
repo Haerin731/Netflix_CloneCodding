@@ -43,9 +43,10 @@ video{
     display:flex;
     margin-left:auto;
     color:white;
+    line-height : 36px; 
 }
-.munu-item{
-    padding: 0  10px;
+.menu-item{
+    padding: 0 10px;
 }
 .banner{
     color:white;
