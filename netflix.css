@@ -1,5 +1,5 @@
 *{
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
 }
 .home{
     position: relative;
@@ -24,19 +24,97 @@ video{
     color:red;
     /* padding:0 15px; */ 
     margin-right: 40px; 
+    font-size : 28px;
+    font-weight : 900;   
     /* padding은 object 내의 내부 여백을, margin은 object 화면과의 외부 여백을 의미 */
+    line-height : 36px; 
 }
 .nav{
     display:flex;
     color:white;
+    /* 세로정렬. 디버깅모드에서 실시간 반영 가능하므로 참고하며 하면 좋음 */
+    line-height : 36px; 
 }
 .nav-item{
+    padding : 0 10px
 }
+
 .menu{
     display:flex;
     margin-left:auto;
     color:white;
 }
 .munu-item{
+    padding: 0  10px;
+}
+.banner{
+    color:white;
+    padding: 50px 0;
+}
+.n-series{
+    display:flex;
+    line-height: 20px;
+}
+.n{
+font-size: 30px;
+font-weight: 900;
+color: red;
+}
+.series{
+font-size: 15px;
+color: white;
+padding-left: 3px;
+}
+.title{
+    font-size: 72px;
+}
+.badge{
+    font-size: 18px;
+    font-weight: 900;
+    padding: 15px 50px;
+}
+.description{
+    width: 40%;
+}
+.buttons{
+    display:flex;
+    padding: 20px 0;
+}
+.white-button{
+    color:black;
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 900;
+}
+.grey-button{
+    margin-left: 15px;
+    color:white;
+    background-color: rgba(170,170,170, .4);
+    /* alpha값이 1이면 투명, 0이면 불투명 */
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 18px;
+}
+.extra{
+    position:absolute;
+    /* 부모인 배너의 영역을 쓰겠다 */
+    right:0;
+    /* 오른쪽정렬 */
+    width: 140px;
+    display: flex;
+}
 
+.replay{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.rating{
+    color: white;
+    background-color: red;
+    border-radius: 50px;
 }
