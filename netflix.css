@@ -47,7 +47,14 @@ video{
 }
 .menu-item{
     padding: 0 10px;
+    color:white;
 }
+/* line-hight가 안먹는데, 더 디테일한 선택자를 쓰면 잘 반영됨 */
+/* 우선순위 설정인듯 */
+.menu-item > i{
+    line-height : 36px; 
+}
+
 .banner{
     color:white;
     padding: 50px 0;
@@ -70,9 +77,9 @@ padding-left: 3px;
     font-size: 72px;
 }
 .badge{
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 900;
-    padding: 15px 50px;
+    padding: 15px 0;
 }
 .description{
     width: 40%;
@@ -111,11 +118,39 @@ padding-left: 3px;
 .replay{
     display: inline-block;
     border: 1px solid white;
-    border-radius: 50px;
+    padding: 10px;
+    border-radius: 90px;
+    margin-left: 10px;
+    width:30x;
 }
 
 .rating{
+    background-color: rgba(170, 170, 170, .2);
+    border-left: 3px solid white;
+    padding-left: 10px;
+    width: 100%;
+    margin-left: 10px;
+    height: 35px;
+}
+/* .rating > img {
+    width:35x;
+    height: 35px;
+} */
+
+.category-list{
+    
+}
+.category{
+
+}
+.title{
+    font-size: 20px;
     color: white;
-    background-color: red;
-    border-radius: 50px;
+    font-weight: 900;
+}
+.list{
+
+}
+.movie{
+
 }

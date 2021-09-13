@@ -2,7 +2,9 @@
     <head>
         <!-- css란 Cascalding Style Sheets 의 약자로 웹문서의 스타일을 지정해 놓은 파일.
         다시말해 웹사이트를 꾸미는 style의 정의를 모아 둔 파일. -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+        
+        <script src="https://kit.fontawesome.com/9df39b2ce5.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./netflix.css" />
         <!-- link 태그의 rel : 현재 문서와 외부 리소스 사이의 연관 관계를 명시
         lint 태그의 href : 링크된 외부 리소스의 url을 명시 -->
@@ -38,11 +40,10 @@
                         <div class="nav-item">내가 찜한 콘텐츠</div>
                     </div>
                     <div class="menu">
-                        <div class="menu-item">A</div>
+                        <div class="menu-item"><i class="fa fa-solid fa-bell"></i></div>
                         <div class="menu-item">키즈</div>
-                        <div class="menu-item">A</div>
-                        <div class="menu-item">A</div>
-                        <div class="menu-item">A</div>
+                        <div class="menu-item"><i class="fa fa-solid fa-gift"></i></div>
+                        <div class="menu-item"><i class="fa fa-solid fa-bell"></i></div>
                         <div class="menu-item">A</div>
                     </div>
                 </div>
@@ -56,25 +57,44 @@
                         오늘 한국에서 콘덴츠 순위 1위
                     </div>
                     <div class="description">
-                        가족을 모두 잃은 은둔형 외톨이. 낡은 아파트에 혼자 살제 된 10대 소년 현수가 이웃들을 위해 무기를 든다. 괴물들이 날뒤기 전까지 몰랐다. 이렇게 살고 싶었을 줄은..
+                        가족을 모두 잃은 은둔형 외톨이. 낡은 아파트에 혼자 살게 된 10대 소년 현수가 이웃들을 위해 무기를 든다. 괴물들이 날뒤기 전까지 몰랐다. 이렇게 살고 싶었을 줄은..
                     </div>
                     <div class="buttons">
                         <div class="white-button">
-                            A
+                            <i class="fa fa-solid fa-play"></i>
                             재생
                         </div>
                         <div class="grey-button">
-                            A
+                            <i class="fas fa-info-circle"></i>
                             상세정보
                         </div>
                     </div>
                     <div class="extra">
                         <div class="replay">
-                            A
+                            <i class="fa fa-solid fa-rotate-right"></i>
                         </div>
-                        <div class="rating">청불</div>
+                        <div class="rating">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/KMRB_D.png" alt="">
+                        </div>
                     </div>
+                </div>
 
+                <div class="category-list">
+                    <div class="category">
+                        <div class="title">
+                            지금 뜨는 컨텐츠
+                        </div>
+                        <div class="list">
+                            <div class="movie">
+                                <!-- <img src="" alt=""> -->
+                                <!-- placeholder: 실제 이미지 들어오기 전에 UI를 비지 않게 채워넣기 위한 것들 -->
+                                <!-- 새로고침시 랜덤 이미지를 출력해주는 사이트 : https://source.unsplash.com/random -->
+                                <!-- 출력 예시. 위 크기로 movie 키워드 이미지를 보여줘 : https://source.unsplash.com/1600x900/?poster -->
+                                <!-- 동일한 이미지를 따오려면? Ctrl+Shift+C를 눌러서 개발자 도구로 진입, 클릭한 클래스의 img src를 가져옴 -->
+                                <img class="boxart-image boxart-image-in-padded-container" src="https://occ-0-3077-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABW7SSZMxImSYcoXzoeI-dDHIOhP0DHhTTHF1R0HWbacQtghkeAaitw_PSHGYInuoedkY9TAkX9eFAuBjA7RoO81zCq8.webp?r=bd1" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
