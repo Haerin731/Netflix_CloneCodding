@@ -1,10 +1,17 @@
 *{
     /* border: 1px solid greenyellow; */
 }
+/* body태그도 별도의 속성을 가지고 있기 때문에, 원하는 디자인을 깨트릴 수 있다. 그럴때는 body에도 속성을 주자. */
+body {
+    margin:0;
+}
 .home{
     position: relative;
     /* 매우 중요! 브라우저는 박스 모델을 가지고 있는데, 부모가 relative를 선언하게 되면 자식들은 밖으로 못나감. */
-    background-color: black;
+    background-color: rgb(20, 20, 20);
+
+    /* 보이는 영역까지 home의 사이즈로 인식 */
+    height: 250%;
 }
 video{
     width: 100%;
@@ -132,25 +139,77 @@ padding-left: 3px;
     margin-left: 10px;
     height: 35px;
 }
-/* .rating > img {
+.rating > img {
     width:35x;
     height: 35px;
-} */
+}
 
 .category-list{
-    
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    width: calc(100% - 50px);
 }
 .category{
 
 }
-.title{
+.subtitle{
     font-size: 20px;
     color: white;
     font-weight: 900;
+    padding: 15px 0;
 }
 .list{
-
+    display: flex;
+    /* 이미지가 화면 밖으로 나가지 않도록 설정. */
+    /* overflow-x: hidden; */
 }
 .movie{
+   padding: 2px;
+}
+.movie > img{
+    width: 224px;
+    height: 126px;
+    border-radius : 4px;
+}
 
+/* 마우스 오버시 적용할 변화 */
+.movie:hover{
+    /* 얼마나 크게 변화? */
+    transform:scale(1.5);
+
+    /* 크기 변화를 하는데 얼마나 걸리게? */
+    transition: .1s;
+
+    transition-delay: .3s;
+}
+
+.menu-bar{
+    padding-bottom: 50px;
+}
+
+.menu-list{
+    display: flex;
+    padding-bottom: 10px;
+}
+.service-code{
+    font-size: 18px;
+    border: 1px solid grey;
+    padding: 5px 5px;
+    width: fit-content;
+}
+
+.bottom-menu{
+color: rgb(182, 161, 161);
+padding-top: 100px;
+padding-left: 120px;
+}
+
+.sub-menu{
+    padding-right: 200px;
+}
+
+.netflix-address{
+    padding-top: 15px;
+    font-size: 12px;
 }
