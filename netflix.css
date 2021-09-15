@@ -11,7 +11,7 @@ body {
     background-color: rgb(20, 20, 20);
 
     /* 보이는 영역까지 home의 사이즈로 인식 */
-    height: 250%;
+    height: 200%;
 }
 video{
     width: 100%;
@@ -200,13 +200,27 @@ padding-left: 3px;
 }
 
 .bottom-menu{
-color: rgb(182, 161, 161);
+color: grey;
 padding-top: 100px;
 padding-left: 120px;
+height: 100%;
+}
+
+.sns-icons{
+    display: flex;
+    line-height: 30px;
+}
+
+.sns-icon{
+    width: 50px;
+    height: 30px;
+    padding-right: 15px;
+    padding-bottom: 10px;
 }
 
 .sub-menu{
     padding-right: 200px;
+    width: 200px;
 }
 
 .netflix-address{
