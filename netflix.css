@@ -35,6 +35,7 @@ video{
     font-weight : 900;   
     /* padding은 object 내의 내부 여백을, margin은 object 화면과의 외부 여백을 의미 */
     line-height : 36px; 
+    cursor: pointer;
 }
 .nav{
     display:flex;
@@ -43,7 +44,12 @@ video{
     line-height : 36px; 
 }
 .nav-item{
+    cursor: pointer;
     padding : 0 10px
+}
+
+.nav-item:hover{
+    opacity: 0.5;
 }
 
 .menu{
@@ -55,6 +61,7 @@ video{
 .menu-item{
     padding: 0 10px;
     color:white;
+    cursor: pointer;
 }
 /* line-hight가 안먹는데, 더 디테일한 선택자를 쓰면 잘 반영됨 */
 /* 우선순위 설정인듯 */
@@ -102,7 +109,13 @@ padding-left: 3px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: 900;
+    cursor: pointer;
 }
+
+.white-button:hover{
+    opacity: .8;
+}
+
 .grey-button{
     margin-left: 15px;
     color:white;
@@ -112,7 +125,13 @@ padding-left: 3px;
     border-radius: 4px;
     font-weight: 900;
     font-size: 18px;
+    cursor: pointer;
 }
+
+.grey-button:hover{
+    opacity: .8;
+}
+
 .extra{
     position:absolute;
     /* 부모인 배너의 영역을 쓰겠다 */
@@ -129,6 +148,11 @@ padding-left: 3px;
     border-radius: 90px;
     margin-left: 10px;
     width:30x;
+    cursor: pointer;
+}
+
+.replay:hover{
+    opacity: 0.5;
 }
 
 .rating{
@@ -166,6 +190,7 @@ padding-left: 3px;
 }
 .movie{
    padding: 2px;
+   cursor: pointer;
 }
 .movie > img{
     width: 224px;
