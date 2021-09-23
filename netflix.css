@@ -11,7 +11,7 @@ body {
     background-color: rgb(20, 20, 20);
 
     /* 보이는 영역까지 home의 사이즈로 인식 */
-    height: 250%;
+    height: 170%;
 }
 video{
     width: 100%;
@@ -325,10 +325,9 @@ padding-left: 3px;
 }
 
 .bottom-menu{
+background-color: rgb(20, 20, 20);
 color: grey;
-padding-top: 100px;
-padding-left: 120px;
-height: 100%;
+padding: 100px 0 100px 120px;
 }
 
 .sns-icons{
